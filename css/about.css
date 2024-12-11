@@ -1,0 +1,217 @@
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.header {
+    word-spacing: 50px;
+    width: 100%;
+    background-color:  hsl(0, 0%, 100%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+
+.nav a {
+    margin: 20px;
+    border-style: ridge;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 450;
+    color: #000000;
+    font-family: sans-serif;
+    transition: 0.3s;
+    padding: 5px 10px;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.page1 {
+    background-color: #e0d3d3;
+    margin: 20px;
+    border-radius: 150px;
+    border-style: solid;
+    border-color: #ffffff;
+}
+.imgabt {
+    margin-top: 80px;
+    margin-left: 36%;
+    height: 460px;
+    width: 360px;
+    border-radius: 200px;
+    border-style: solid;
+    max-width: 100%;
+}
+@media (max-width: 768px) {
+    .imgabt {
+        width: 80%; 
+        margin-left: 15%;
+        height: auto;
+        margin-top: 50px;
+    }
+}
+@media (max-width: 480px) {
+    .imgabt {
+        width: 90%; 
+        margin-left: 5%;
+        height: auto;
+        margin-top: 30px;
+    }
+}
+.about {
+    text-align: center;
+    position: relative;
+    color: #443333;
+    font-size: 20px;
+    padding: 50px;
+    font-family: 'Gill Sans';
+}
+.sections, .food, .Fr, .hays {
+    background-color: #ffffff;
+    padding: 30px;
+    position: relative;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 30px;
+    border-style: solid;
+    color: #000000;
+    font-style: italic;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.sections, .food, .Fr, .hays {
+    max-width: 23%;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .sections, .food, .Fr, .hays {
+        max-width: 45%;
+    }
+}
+@media (max-width: 480px) {
+    .sections, .food, .Fr, .hays {
+        max-width: 100%;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.works {
+    max-width: 50%;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.img1, .img2, .img3 {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 30px;
+}
+
+.overlay {
+    font-family: -apple-system;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .works {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .img1, .img2, .img3 {
+        width: 100%; 
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .works {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .img1, .img2, .img3 {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 0;
+    }
+
+    .nav a {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+    .imgabt {
+        margin-top: 80px;
+        margin-left: 15px;
+        height: 400px;
+        width: 320px;
+    }
+
+    .about {
+        padding-left: 20px;
+        font-size: 22px;
+        margin: 0 10px;
+    }
+
+    .sections, .food, .Fr, .hays {
+        font-size: 20px;
+        margin-left: 10px;
+        padding: 10px 15px;
+    }
+}
+@media (max-width: 480px) {
+    .header {
+        padding: 8px 0;
+    }
+
+    .nav a {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    .imgabt {
+        margin-top: 60px;
+        margin-left: 10px;
+        height: 300px;
+        width: 250px;
+    }
+
+    .about {
+        padding-left: 20px;
+        font-size: 20px;
+        margin: 0 30px;
+    }
+    .sections, .food, .Fr, .hays {
+        font-size: 20px;
+        margin-left: 10px;
+        width: 100%;
+        padding: 10px 10px;
+    }
+}

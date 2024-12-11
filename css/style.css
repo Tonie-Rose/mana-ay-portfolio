@@ -1,0 +1,158 @@
+body {
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header {
+    word-spacing: 20px;
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    margin: 20px;
+    border-style: ridge;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 450;
+    color: #000000;
+    font-family: sans-serif;
+    transition: 0.3s;
+    padding: 5px 10px;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.img {
+    width: 480px;
+    height: 599px;
+    margin: 20px auto;
+    display: block;
+    padding-top: -30px;
+    padding-right: 780px;
+    position: relative;
+    z-index: 1;
+}
+
+.names1 {
+    text-align: left;
+    padding-left: 510px;
+    margin-top: -600px;
+}
+
+.names1 h1 {
+    color: #665959;
+    font-size: 130px;
+    font-style: italic;
+    line-height: 1.1;
+}
+
+.names1 p {
+    color: #615555;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 0.0;
+    text-align: center;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: right;
+    color: #fff;
+    font-size: 16px;
+    padding-top: 200px;
+}
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 0;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav a {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+    .img {
+        width: 80%;
+        height: auto;
+    }
+
+    .names1 {
+        text-align: center;
+        padding-left: 0;
+        margin-top: 0;
+    }
+
+    .names1 h1 {
+        font-size: 60px;
+    }
+
+    .names1 p {
+        font-size: 16px;
+    }
+
+    .footer {
+        font-size: 14px;
+        padding: 50px;
+    }
+}
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 0;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .nav a {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    .img {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .names1 h1 {
+        font-size: 40px; 
+    }
+
+    .names1 p {
+        font-size: 14px;
+    }
+
+    .footer {
+        font-size: 12px;
+        padding: 30px;
+    }
+}
